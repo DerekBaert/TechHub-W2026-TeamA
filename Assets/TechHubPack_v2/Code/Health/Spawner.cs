@@ -10,7 +10,9 @@ public class Spawner : MonoBehaviour
     [SerializeField] private bool spawnOnStart = true;
     [SerializeField] private GameObject objectToSpawn;
     [SerializeField] protected GameObject latestSpawnedObject;
-    
+    public float spawnTime = 1f;
+    public const float interval = 5.0f;
+
     [Header("Events")]
     public UnityEvent OnSpawn = new UnityEvent();
     
@@ -23,7 +25,24 @@ public class Spawner : MonoBehaviour
         // If the object is to spawn on start of the game, spawn an object into the scene.
         if (spawnOnStart) SpawnObject();
     }
-    
+
+   
+
+    void Update()
+    {
+        spawnTime += Time.deltaTime;
+
+        if (spawnTime >= interval)
+        {
+            spawnTime -= interval;
+
+            SpawnObject();
+        }
+    }
+    // A function to...
+    // Check time
+    // and then spawn objects when time hits a certain amount
+
     /// <summary>
     /// Spawn an Object into the Scene at the position & rotation of the Spawner.
     /// </summary>
@@ -42,7 +61,7 @@ public class Spawner : MonoBehaviour
         
         
         // Calls OnSpawn Event while Object has spawned.
-        OnSpawn?.Invoke();
+        OnSpawn.Invoke();
         
         
         if (DEBUG_MODE) Debug.Log("Spawned : " + latestSpawnedObject.name);
