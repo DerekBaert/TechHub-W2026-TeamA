@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -37,6 +38,8 @@ public class Spawner : MonoBehaviour
             spawnTime -= interval;
 
             SpawnObject();
+            //Randomize the spawn time and location of the enemy - Brayden
+            //Plug the randomized number into the spawn time - Brayden
         }
     }
     // A function to...
