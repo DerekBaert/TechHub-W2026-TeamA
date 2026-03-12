@@ -1,7 +1,12 @@
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
+using Unity.Hierarchy;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 
+// March 12 2026 (1:08 PM), I hate coding, it hurts my brain - Brayden (Tech Hub Team A Winter 2026)
 /// <summary>
 /// A class that spawns objects into the Scene at the transform of the object with the Spawner class.
 /// </summary>
@@ -26,9 +31,6 @@ public class Spawner : MonoBehaviour
         // If the object is to spawn on start of the game, spawn an object into the scene.
         if (spawnOnStart) SpawnObject();
     }
-
-   
-
     void Update()
     {
         spawnTime += Time.deltaTime;
@@ -70,5 +72,6 @@ public class Spawner : MonoBehaviour
         if (DEBUG_MODE) Debug.Log("Spawned : " + latestSpawnedObject.name);
     }
 }
+    
 
 
