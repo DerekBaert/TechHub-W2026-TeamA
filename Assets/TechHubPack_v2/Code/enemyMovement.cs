@@ -5,7 +5,7 @@ public class enemyMovement : MonoBehaviour
     
     public GameObject player;
    public bool followPlayer = true;
-    public Vector2 mover; 
+    Vector2 mover;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +17,7 @@ public class enemyMovement : MonoBehaviour
     {
         if (followPlayer)
         {
+            mover = player.transform.position - transform.position;
             transform.Translate(mover * Time.deltaTime);
         }
     }
