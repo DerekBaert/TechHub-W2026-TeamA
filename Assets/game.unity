@@ -256,6 +256,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1110123541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &796270114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774313747164983040, guid: 4f5acc4bc1b245d49b19793e8d0c4caa, type: 3}
+  m_PrefabInstance: {fileID: 1303523953260363498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1110123537
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   spawnOnStart: 0
   objectToSpawn: {fileID: 2774313747164983040, guid: 4f5acc4bc1b245d49b19793e8d0c4caa, type: 3}
-  latestSpawnedObject: {fileID: 0}
+  latestSpawnedObject: {fileID: 796270114}
   spawnTime: 5
   OnSpawn:
     m_PersistentCalls:
@@ -1592,21 +1597,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2080447137835653774, guid: 4f5acc4bc1b245d49b19793e8d0c4caa, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1110123537}
     - target: {fileID: 2774313747164983040, guid: 4f5acc4bc1b245d49b19793e8d0c4caa, type: 3}
       propertyPath: m_Name
       value: CanEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 5277777160449553654, guid: 4f5acc4bc1b245d49b19793e8d0c4caa, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6457057189464971834, guid: 4f5acc4bc1b245d49b19793e8d0c4caa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.93
+      value: -2.77
       objectReference: {fileID: 0}
     - target: {fileID: 6457057189464971834, guid: 4f5acc4bc1b245d49b19793e8d0c4caa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 6457057189464971834, guid: 4f5acc4bc1b245d49b19793e8d0c4caa, type: 3}
       propertyPath: m_LocalPosition.z

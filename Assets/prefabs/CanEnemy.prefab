@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7322709698514197487}
   - component: {fileID: 825998272070028054}
   - component: {fileID: 5277777160449553654}
+  - component: {fileID: 2080447137835653774}
   m_Layer: 0
   m_Name: CanEnemy
   m_TagString: Untagged
@@ -189,3 +190,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.0677001, y: 2.4574587}
   m_EdgeRadius: 0
+--- !u!114 &2080447137835653774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774313747164983040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fce7bdeefe8a946a43e8fb08c96841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemyMovement
+  player: {fileID: 0}
+  followPlayer: 1
+  mover: {x: 1, y: 2}
