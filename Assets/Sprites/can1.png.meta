@@ -116,12 +116,12 @@ TextureImporter:
       name: can1_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 23
-        width: 250
-        height: 284
+        x: 55
+        y: 37
+        width: 375
+        height: 426
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3859633931fd7b242bf5c3e0b8acfe25
     internalID: 0
     vertices: []
     indices: 
