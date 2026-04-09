@@ -116,12 +116,12 @@ TextureImporter:
       name: can2_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 22
-        width: 267
-        height: 284
+        x: 52
+        y: 35
+        width: 401
+        height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6299ce7b53fa07a41a386faa92d27d10
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +149,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       can2_0: -2587233435533089779
+      can2_1: 1863250769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
