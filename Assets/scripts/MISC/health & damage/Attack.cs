@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
@@ -12,10 +13,11 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) == true)
+       
+        if (Input.GetKeyDown(KeyCode.Space) == true) 
         {
             circleCollider.enabled = true;
-     
+
         }
         else
         { 
