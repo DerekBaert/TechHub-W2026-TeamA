@@ -348,6 +348,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &228982601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4372395488386139349, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
+  m_PrefabInstance: {fileID: 1271997673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &228982602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228982601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2ad88b39d1d8d49af36a87a3a51f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  spriteRender: {fileID: 0}
 --- !u!1 &433482384
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +985,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1935627501326392124, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935627501326392124, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935627501326392124, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2478194233832932650, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -987,6 +1017,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000775470681405654, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
+      propertyPath: maxHP
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4372395488386139349, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
       propertyPath: m_Name
       value: BottleEnemy 1
@@ -1003,7 +1037,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 1707398944621067632, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4372395488386139349, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 228982602}
   m_SourcePrefab: {fileID: 100100000, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
 --- !u!1 &1313264091
 GameObject:
