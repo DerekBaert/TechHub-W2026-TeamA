@@ -16,11 +16,13 @@ public class Attack : MonoBehaviour
        
         if (Input.GetKeyDown(KeyCode.Space) == true) 
         {
+            print("SpaceClicked");
             circleCollider.enabled = true;
 
         }
         else
-        { 
+        {
+            print("DoneAttack");
             circleCollider.enabled = false;
 
         }
