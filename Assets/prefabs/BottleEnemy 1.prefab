@@ -67,8 +67,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.012978911, y: -0.025957942}
-  m_Size: {x: 1.4916053, y: 2.868993}
+  m_Offset: {x: 0.0051584244, y: -0.08943772}
+  m_Size: {x: 0.94749427, y: 2.2251277}
   m_Direction: 0
 --- !u!114 &7612089043224319738
 MonoBehaviour:
@@ -84,6 +84,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyAttack
   player: {fileID: 0}
   health: {fileID: 0}
+  timeBetweenAttacks: 2
+  damage: 10
 --- !u!1 &4372395488386139349
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyMovement
   player: {fileID: 0}
   followPlayer: 1
-  MaxSpeed: 10
+  MaxSpeed: 5
   MinSpeed: 5
   stopping: 0
 --- !u!114 &3000775470681405654
@@ -302,6 +304,6 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.020017385, y: -0.2427609}
-  m_Size: {x: 2.5111184, y: 5.5472636}
+  m_Offset: {x: -0.020017326, y: -0.21392494}
+  m_Size: {x: 1.9130552, y: 4.856787}
   m_Direction: 0
