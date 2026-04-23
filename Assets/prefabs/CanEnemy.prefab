@@ -159,9 +159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyMovement
   player: {fileID: 0}
   followPlayer: 1
-  MaxSpeed: 5
-  MinSpeed: 5
-  stopping: 0
 --- !u!114 &3261685830132662820
 MonoBehaviour:
   m_ObjectHideFlags: 0
