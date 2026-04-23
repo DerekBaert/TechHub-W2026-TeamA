@@ -49,9 +49,9 @@ using UnityEngine.Events;
         /// <returns>Whether currentHP has been reduced to 0 or lower.</returns>
         public bool TakeDamage(float damage)
         {
-        ColorChanger ChangeColor = GetComponent<ColorChanger>();
-        // Apply damage.
-        ChangeColor.ChangeColorRed();
+            //ColorChanger ChangeColor = GetComponent<ColorChanger>();
+            //// Apply damage.
+            //ChangeColor.ChangeColorRed();
             currentHP -= damage;
 
             // In debug mode, print a message in the console letting us know the value of currentHP.
