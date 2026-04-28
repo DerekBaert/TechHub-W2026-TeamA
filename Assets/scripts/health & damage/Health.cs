@@ -58,7 +58,7 @@ public class Health : MonoBehaviour
         ChangeColor.ChangeColorRed();
         currentHP -= damage;
         redOrNot = true;
-        timer = 0.5f;
+        timer = 0.2f;
 
 
         // In debug mode, print a message in the console letting us know the value of currentHP.
