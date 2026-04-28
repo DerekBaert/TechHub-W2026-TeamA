@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class RangedEnemyAttack : MonoBehaviour
 {
@@ -7,8 +8,9 @@ public class RangedEnemyAttack : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-    
-        //enemyBullet = Instantiate(enemyBullet, transform.position,transform.LookAt(player.transform,Vector3.));
+
+        enemyBullet = Instantiate(enemyBullet, transform.position, transform.rotation);
+        enemyBullet.transform.LookAt(player.transform, Vector3.up);
     }
 
     // Update is called once per frame
