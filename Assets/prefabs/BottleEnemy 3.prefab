@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5472873959388778506}
   - component: {fileID: 2873498705623576989}
   - component: {fileID: 7612089043224319738}
-  - component: {fileID: 5045418302948015946}
   m_Layer: 0
   m_Name: attack hit box
   m_TagString: Untagged
@@ -87,22 +86,6 @@ MonoBehaviour:
   health: {fileID: 0}
   timeBetweenAttacks: 2
   damage: 10
---- !u!114 &5045418302948015946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3350078541101287133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3cc2dbf34092ee44b31a0068655d9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::enemyAttack
-  player: {fileID: 0}
-  health: {fileID: 0}
-  timeBetweenAttacks: 2
-  damage: 10
 --- !u!1 &4372395488386139349
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,9 +101,9 @@ GameObject:
   - component: {fileID: 7486419861883258829}
   - component: {fileID: 3000775470681405654}
   - component: {fileID: 8255849510175400801}
-  - component: {fileID: 4681233504237553997}
+  - component: {fileID: 6729689795455122782}
   m_Layer: 0
-  m_Name: BottleEnemy 1
+  m_Name: BottleEnemy 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,7 +308,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.020017326, y: -0.21392494}
   m_Size: {x: 1.9130552, y: 4.856787}
   m_Direction: 0
---- !u!114 &4681233504237553997
+--- !u!114 &6729689795455122782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
