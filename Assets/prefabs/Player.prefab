@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1435025287546857814}
   - component: {fileID: 6097094654868867663}
   - component: {fileID: 3103949455227591160}
-  - component: {fileID: 4242871577980216857}
+  - component: {fileID: 6741106697976811381}
   - component: {fileID: 8869738449079334780}
   m_Layer: 0
   m_Name: AttackHitbox
@@ -155,13 +155,13 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.00000047683716, y: 0}
   m_Radius: 0.49999994
---- !u!114 &4242871577980216857
+--- !u!114 &6741106697976811381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,11 +170,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4563858666377017147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e875f5e05418242ae0a2767891afdb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a346be35127bc449b21ee07a3afa599, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DamageOnCollision
+  m_EditorClassIdentifier: Assembly-CSharp::DamageOnTrigger
   damageToDeal: 3
-  DEBUG_MODE: 1
+  DEBUG_MODE: 0
 --- !u!114 &8869738449079334780
 MonoBehaviour:
   m_ObjectHideFlags: 0

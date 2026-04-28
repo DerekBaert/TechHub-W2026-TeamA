@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1836873562081874156}
   - component: {fileID: 5862402758788649524}
   - component: {fileID: 1951853400313092105}
-  - component: {fileID: -3788819432618486801}
+  - component: {fileID: 4522175012252171958}
   m_Layer: 0
   m_Name: PlayerBullet
   m_TagString: Untagged
@@ -170,7 +170,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &-3788819432618486801
+--- !u!114 &4522175012252171958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,8 +179,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5962418766976862551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e875f5e05418242ae0a2767891afdb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a346be35127bc449b21ee07a3afa599, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DamageOnCollision
-  damageToDeal: 3
-  DEBUG_MODE: 1
+  m_EditorClassIdentifier: Assembly-CSharp::DamageOnTrigger
+  damageToDeal: 1
+  DEBUG_MODE: 0

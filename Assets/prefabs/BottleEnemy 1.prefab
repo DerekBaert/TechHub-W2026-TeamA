@@ -118,6 +118,8 @@ GameObject:
   - component: {fileID: 7486419861883258829}
   - component: {fileID: 3000775470681405654}
   - component: {fileID: 8255849510175400801}
+  - component: {fileID: 4681233504237553997}
+  - component: {fileID: 715376824940742796}
   m_Layer: 0
   m_Name: BottleEnemy 1
   m_TagString: Untagged
@@ -154,8 +156,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -278,7 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   timer: 0
   redOrNot: 0
-  maxHP: 3
+  maxHP: 10
   deathBehaviour: 0
   OnDeath:
     m_PersistentCalls:
@@ -324,3 +326,30 @@ CapsuleCollider2D:
   m_Offset: {x: -0.020017326, y: -0.21392494}
   m_Size: {x: 1.9130552, y: 4.856787}
   m_Direction: 0
+--- !u!114 &4681233504237553997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372395488386139349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2ad88b39d1d8d49af36a87a3a51f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  spriteRender: {fileID: 0}
+--- !u!114 &715376824940742796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372395488386139349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dbbe72039fd297419d7401e9f871320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RangedEnemyAttack
+  enemyBullet: {fileID: 337356759763570413, guid: 47c933bf0052a2c43a338514ed529250, type: 3}
+  player: {fileID: 0}
