@@ -22,7 +22,7 @@ public class Attack : MonoBehaviour
         }
         else
         {
-            print("DoneAttack");
+       
             circleCollider.enabled = false;
 
         }

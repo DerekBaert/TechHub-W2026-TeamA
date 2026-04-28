@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 6097094654868867663}
   - component: {fileID: 3103949455227591160}
   - component: {fileID: 4242871577980216857}
+  - component: {fileID: 8869738449079334780}
   m_Layer: 0
   m_Name: AttackHitbox
   m_TagString: Untagged
@@ -154,7 +155,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -173,7 +174,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageOnCollision
   damageToDeal: 3
-  DEBUG_MODE: 0
+  DEBUG_MODE: 1
+--- !u!114 &8869738449079334780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4563858666377017147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490f6994694db10419e16d58eab2c5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Attack
+  circleCollider: {fileID: 3103949455227591160}
 --- !u!1 &4615084408591036857
 GameObject:
   m_ObjectHideFlags: 0
