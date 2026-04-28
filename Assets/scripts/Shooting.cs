@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public GameObject bullet;
+    public GameObject playerBullet;
     public Transform firePoint;
     public float bulletSpeed = 50;
     public GameObject player;
@@ -23,7 +23,7 @@ public class Shooting : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {;
-            GameObject bulletClone = Instantiate(bullet);
+            GameObject bulletClone = Instantiate(playerBullet);
             bulletClone.transform.position = firePoint.position;
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
 

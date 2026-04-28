@@ -154,7 +154,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb629fa69db1a7040acef52f4ff864f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shooting
-  bullet: {fileID: 5962418766976862551, guid: 4b2d4639a8ac53642a9d10dc4abafa3b, type: 3}
+  playerBullet: {fileID: 5962418766976862551, guid: 4b2d4639a8ac53642a9d10dc4abafa3b, type: 3}
   firePoint: {fileID: 4650554404751300741}
   bulletSpeed: 50
   player: {fileID: 9021589642485201232}
