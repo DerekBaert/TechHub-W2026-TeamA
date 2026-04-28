@@ -160,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyMovement
   player: {fileID: 0}
   followPlayer: 1
-  speed: 15
+  speed: 10
 --- !u!114 &3261685830132662820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   timer: 0
   redOrNot: 0
-  maxHP: 10
+  maxHP: 15
   deathBehaviour: 0
   OnDeath:
     m_PersistentCalls:
