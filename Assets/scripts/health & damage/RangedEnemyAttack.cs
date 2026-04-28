@@ -8,7 +8,7 @@ public class RangedEnemyAttack : MonoBehaviour
     void Start()
     {
     
-        enemyBullet = Instantiate(enemyBullet, transform.position,transform.LookAt(player.transform,Vector3.));
+        //enemyBullet = Instantiate(enemyBullet, transform.position,transform.LookAt(player.transform,Vector3.));
     }
 
     // Update is called once per frame
