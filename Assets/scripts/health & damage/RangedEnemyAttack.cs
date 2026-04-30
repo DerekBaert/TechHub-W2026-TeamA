@@ -1,6 +1,5 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class RangedEnemyAttack : MonoBehaviour
 {
@@ -23,7 +22,7 @@ public class RangedEnemyAttack : MonoBehaviour
         if (time > timeBetweenShots)
         {
             enemyBullet = Instantiate(enemyBullet, transform.position, transform.rotation);
-            enemyBullet.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+            enemyBullet.transform.rotation = Quaternion.Euler(0, enemyBullet.transform.rotation.eulerAngles.y, 0); 
             enemyBullet.transform.LookAt(player.transform, Vector3.up);
             
             time = 0;
