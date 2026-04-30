@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6994070675462977124}
   - component: {fileID: 8633483221887284373}
   - component: {fileID: 3644630285538766358}
+  - component: {fileID: 8711947173105127777}
   m_Layer: 0
   m_Name: TrashMummy
   m_TagString: Untagged
@@ -233,3 +234,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8711947173105127777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612411549039116950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe30628e1a1ad8c47b018728f9a7e541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlipToPlayer
+  player: {fileID: 7107173562184933098, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
