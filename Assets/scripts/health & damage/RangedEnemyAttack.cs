@@ -11,8 +11,8 @@ public class RangedEnemyAttack : MonoBehaviour
     void Start()
     {
         GameObject.Find("Player");
-        GameObject.Find("EnemyBullet");
-       
+        GameObject enemyBullet = Instantiate(Resources.Load("EnemyBullet", typeof(GameObject))) as GameObject;
+
     }
 
     // Update is called once per frame
@@ -22,9 +22,15 @@ public class RangedEnemyAttack : MonoBehaviour
         if (time > timeBetweenShots)
         {
             enemyBullet = Instantiate(enemyBullet, transform.position, transform.rotation);
-            enemyBullet.transform.rotation = Quaternion.Euler(0, enemyBullet.transform.rotation.eulerAngles.y, 0); 
-            enemyBullet.transform.LookAt(player.transform, Vector3.up);
-            
+            Vector3 targ = player.transform.position;
+            targ.z = 0f;
+
+            Vector3 objectPos = enemyBullet.transform.position;
+            targ.x = targ.x - objectPos.x;
+            targ.y = targ.y - objectPos.y;
+
+            float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
+            enemyBullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             time = 0;
         }
 
