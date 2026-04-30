@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 6498508101896315603}
   - component: {fileID: 8600240665880358985}
   - component: {fileID: 200920867710944717}
+  - component: {fileID: -4644397987606893276}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -547,3 +548,25 @@ MonoBehaviour:
   firePoint: {fileID: 4650554404751300741}
   bulletSpeed: 50
   player: {fileID: 9021589642485201232}
+--- !u!95 &-4644397987606893276
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9021589642485201232}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8fba0a6444629a428c1f7fa64384ea2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
