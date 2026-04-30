@@ -15,10 +15,9 @@ GameObject:
   - component: {fileID: 2080447137835653774}
   - component: {fileID: 3261685830132662820}
   - component: {fileID: 2906457619692505577}
-  - component: {fileID: 7076115287581581078}
-  - component: {fileID: 7277647487200843790}
+  - component: {fileID: 7740476006625243259}
   m_Layer: 0
-  m_Name: CanEnemy
+  m_Name: CanEnemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,8 +132,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 5
-  m_AngularDamping: 0
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -161,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyMovement
   player: {fileID: 0}
   followPlayer: 1
-  speed: 10
+  speed: 15
 --- !u!114 &3261685830132662820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   timer: 0
   redOrNot: 0
-  maxHP: 15
+  maxHP: 3
   deathBehaviour: 0
   OnDeath:
     m_PersistentCalls:
@@ -231,20 +230,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.3833246, y: 3.6841683}
   m_EdgeRadius: 0
---- !u!114 &7076115287581581078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2774313747164983040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2ad88b39d1d8d49af36a87a3a51f10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
-  spriteRender: {fileID: 0}
---- !u!114 &7277647487200843790
+--- !u!114 &7740476006625243259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,7 +242,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dbbe72039fd297419d7401e9f871320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangedEnemyAttack
-  enemyBullet: {fileID: 0}
-  player: {fileID: 0}
-  timeBetweenShots: 2
-  time: 0
+  enemyBullet: {fileID: 337356759763570413, guid: 47c933bf0052a2c43a338514ed529250, type: 3}
+  player: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
