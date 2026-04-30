@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 3261685830132662820}
   - component: {fileID: 2906457619692505577}
   - component: {fileID: 7076115287581581078}
-  - component: {fileID: 7277647487200843790}
   m_Layer: 0
   m_Name: CanEnemy
   m_TagString: Untagged
@@ -244,19 +243,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
   spriteRender: {fileID: 0}
---- !u!114 &7277647487200843790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2774313747164983040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dbbe72039fd297419d7401e9f871320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RangedEnemyAttack
-  enemyBullet: {fileID: 0}
-  player: {fileID: 0}
-  timeBetweenShots: 2
-  time: 0
