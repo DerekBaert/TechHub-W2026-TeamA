@@ -6,10 +6,8 @@ public class RangedEnemyAttack : MonoBehaviour
     public GameObject enemyBullet;
     public GameObject player;
     public int timeBetweenShots = 2;
-    public float time;
-    public float rotationMultiplyer = 1f;
-    public float speed;
-    public float rotationModifier;
+    private float time;
+    Vector3 rotation;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,26 +20,12 @@ public class RangedEnemyAttack : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
+        Vector2 direction = player.transform.position - transform.position;
+        transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
         if (time > timeBetweenShots)
         {
             enemyBullet = Instantiate(enemyBullet, transform.position, transform.rotation);
-           
-
-    
-
-   
-    
-          if (player != null)
-          {
-            Vector3 vectorToTarget = player.transform.position - transform.position;
-            float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg - rotationModifier;
-            Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-            enemyBullet.transform.rotation = Quaternion.Slerp(enemyBullet.transform.rotation, q, Time.deltaTime * speed);
-          }
-
-    
-
-          time = 0;
+            time = 0;
         }
 
     }
