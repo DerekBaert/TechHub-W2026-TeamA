@@ -11,11 +11,12 @@ public class Spawnerlogic : MonoBehaviour
     [SerializeField]
     private GameObject objectToSpawn;
    public float spawnInterval = 1.5f;
+    public float startAfter = 2f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("RandomSpawn", 2f, spawnInterval);
+        InvokeRepeating("RandomSpawn", startAfter, spawnInterval);
     }
 
     // Update is called once per frame
