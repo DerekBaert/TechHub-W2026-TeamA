@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Runtime.CompilerServices;
 
 
 public class Spawnerlogic : MonoBehaviour
@@ -9,15 +10,19 @@ public class Spawnerlogic : MonoBehaviour
     private Vector3 spawnPosition;
     [SerializeField]
     private GameObject objectToSpawn;
+   public float spawnInterval = 1.5f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        RandomSpawn();
+        InvokeRepeating("RandomSpawn", 2f, spawnInterval);
     }
 
     // Update is called once per frame
     void Update()
     {
+       
+
         
     }
 
@@ -25,7 +30,8 @@ public class Spawnerlogic : MonoBehaviour
     {
         xPosition = Random.Range(-45f, 45f);
         yPosition = Random.Range(-45f, 45f);
-        spawnPosition = new Vector3(xPosition, yPosition, transform.position.z);
+        spawnPosition = new Vector3(xPosition, yPosition, 0);
         Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
+   
     }
 }
