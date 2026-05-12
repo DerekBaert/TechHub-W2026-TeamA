@@ -2,5 +2,7 @@ using UnityEngine;
 
 public class Counter
 {
-    public static int _counter = 0;
+
+    public void IncreaseCounter();
+
 }

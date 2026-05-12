@@ -1,5 +1,6 @@
 
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ using UnityEngine.Events;
 /// </summary>
 public class Health : MonoBehaviour
 {
+    public DeathCounter1 counterScript;
     ColorChanger ChangeColor;
     public float timer = 0f;
     public bool redOrNot = false;
@@ -80,6 +82,7 @@ public class Health : MonoBehaviour
         {
             // If not, run Death() and return true;
             Death();
+            counterScript.IncreaseCounter();
             return true;
         }
     }
