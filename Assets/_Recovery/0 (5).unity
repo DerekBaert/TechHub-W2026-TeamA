@@ -271,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774313747164983040, guid: 9c68093aefcdb93449f0d374671b382d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6457057189464971834, guid: 9c68093aefcdb93449f0d374671b382d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -504,28 +504,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7740476006625243259, guid: ad8c5d4a3041c4542a0cb237eecb3ec4, type: 3}
       propertyPath: speed
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7740476006625243259, guid: ad8c5d4a3041c4542a0cb237eecb3ec4, type: 3}
-      propertyPath: enemyBullet
-      value: 
-      objectReference: {fileID: 337356759763570413, guid: 47c933bf0052a2c43a338514ed529250, type: 3}
-    - target: {fileID: 7740476006625243259, guid: ad8c5d4a3041c4542a0cb237eecb3ec4, type: 3}
       propertyPath: rotationModifier
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7740476006625243259, guid: ad8c5d4a3041c4542a0cb237eecb3ec4, type: 3}
       propertyPath: rotationMultiplyer
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 7910575982467216855, guid: ad8c5d4a3041c4542a0cb237eecb3ec4, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1110123537}
-    - target: {fileID: 7910575982467216855, guid: ad8c5d4a3041c4542a0cb237eecb3ec4, type: 3}
-      propertyPath: enemyBullet
-      value: 
-      objectReference: {fileID: 337356759763570413, guid: 47c933bf0052a2c43a338514ed529250, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12444,10 +12432,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []

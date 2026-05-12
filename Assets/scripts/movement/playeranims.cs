@@ -79,5 +79,71 @@ public class Animcontroller : MonoBehaviour
             animator.SetBool("MoveDown", false);
             animator.SetBool("Idle", true);
         }
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            animator.SetBool("MoveUp", true);
+            animator.SetBool("MoveLeft", false);
+            animator.SetBool("MoveRight", false);
+            animator.SetBool("Idle", false);
+            animator.SetBool("MoveDown", false);
+        }
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            animator.SetBool("MoveUp", false);
+            animator.SetBool("MoveLeft", false);
+            animator.SetBool("MoveRight", false);
+            animator.SetBool("MoveDown", false);
+            animator.SetBool("Idle", true);
+        }
+        if 
+            (Input.GetKey(KeyCode.DownArrow))
+        {
+            animator.SetBool("MoveUp", false);
+            animator.SetBool("MoveLeft", false);
+            animator.SetBool("MoveRight", false);
+            animator.SetBool("MoveDown", true);
+            animator.SetBool("Idle", false);
+        }
+        if  (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            animator.SetBool("MoveUp", false);
+            animator.SetBool("MoveLeft", false);
+            animator.SetBool("MoveRight", false);
+            animator.SetBool("MoveDown", false);
+            animator.SetBool("Idle", true);
+        }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                animator.SetBool("MoveUp", false);
+                animator.SetBool("MoveLeft", false);
+                animator.SetBool("MoveDown", false);
+                animator.SetBool("MoveRight", true);
+                animator.SetBool("Idle", false);
+        }
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            animator.SetBool("MoveUp", false);
+            animator.SetBool("MoveLeft", false);
+            animator.SetBool("MoveRight", false);
+            animator.SetBool("MoveDown", false);
+            animator.SetBool("Idle", true);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            animator.SetBool("MoveLeft", true);
+            animator.SetBool("MoveUp", false);
+            animator.SetBool("MoveRight", false);
+            animator.SetBool("MoveDown", false);
+            animator.SetBool("Idle", false);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            animator.SetBool("MoveUp", false);
+            animator.SetBool("MoveLeft", false);
+            animator.SetBool("MoveRight", false);
+            animator.SetBool("MoveDown", false);
+            animator.SetBool("Idle", true);
+        }
+        
     }
 }
