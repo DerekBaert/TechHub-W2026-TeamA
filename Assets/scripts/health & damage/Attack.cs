@@ -14,7 +14,7 @@ public class Attack : MonoBehaviour
     void Update()
     {
        
-        if (Input.GetKeyDown(KeyCode.Space) == true) 
+        if (Input.GetKey(KeyCode.Space) == true) 
         {
             print("SpaceClicked");
             circleCollider.enabled = true;
