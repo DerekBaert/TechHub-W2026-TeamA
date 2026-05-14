@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 8711947173105127777}
   - component: {fileID: 4554010599721815024}
   - component: {fileID: -8198313746181951357}
+  - component: {fileID: 4066072837122470942}
   m_Layer: 0
   m_Name: TrashMummy
   m_TagString: Untagged
@@ -144,7 +145,7 @@ MonoBehaviour:
   timer: 0
   redOrNot: 0
   maxHP: 100
-  deathBehaviour: 0
+  deathBehaviour: 1
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -283,3 +284,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::trashmommy
   trashMommyClip: {fileID: 8300000, guid: f9fa43ace2561884bb637227e3de9d17, type: 3}
+--- !u!114 &4066072837122470942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612411549039116950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14abbd1d94fa1344baac7cdf6652cdc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WinScreen
+  health: {fileID: 0}
