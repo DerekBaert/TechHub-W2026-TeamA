@@ -1,18 +1,22 @@
+using JetBrains.Annotations;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
 {
     public SpriteRenderer spriteRender;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Color originalColor;
     void Start()
     {
         spriteRender = GetComponent<SpriteRenderer>();
+        originalColor = spriteRender.color;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ChangeColorRed() 
@@ -22,6 +26,6 @@ public class ColorChanger : MonoBehaviour
 
     public void ResetColor() 
     {
-        spriteRender.color = new Color(255, 255, 255, 255);
+        spriteRender.color = originalColor;
     }
 }

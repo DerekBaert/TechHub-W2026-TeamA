@@ -84,6 +84,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyAttack
   player: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
   health: {fileID: 0}
+  timeBetweenAttacks: 2
+  damage: 10
 --- !u!1 &4372395488386139349
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,8 +306,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.020017385, y: -0.2427609}
-  m_Size: {x: 2.5111184, y: 5.5472636}
+  m_Offset: {x: -0.020017326, y: -0.21392494}
+  m_Size: {x: 1.9130552, y: 4.856787}
   m_Direction: 0
 --- !u!114 &4681233504237553997
 MonoBehaviour:

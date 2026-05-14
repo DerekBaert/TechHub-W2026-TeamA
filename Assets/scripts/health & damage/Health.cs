@@ -51,9 +51,11 @@ public class Health : MonoBehaviour
     }
 
     /// <summary>
-    /// A class for objects with hit point values.
+    /// Applies damage to currentHP, then checks if it has been reduced below 0. Runs DeathFromDamage() if it has.
     /// </summary>
-    public class Health : MonoBehaviour
+    /// <param name="damage">The damage applied to currentHP.</param>
+    /// <returns>Whether currentHP has been reduced to 0 or lower.</returns>
+    public bool TakeDamage(float damage)
     {
         // Apply damage.
         ChangeColor.ChangeColorRed();
@@ -65,30 +67,25 @@ public class Health : MonoBehaviour
         // In debug mode, print a message in the console letting us know the value of currentHP.
         if (DEBUG_MODE)
         {
-            DestroyOnDeath,
-            DisableOnDeath,
-            ResetOnDeath,
-            DoNothingOnDeath,
+            Debug.Log(currentHP);
         }
-        
-        [Header("Events")]
-        [Tooltip("The event that will run when the object reaches 0 HP.")]
-        public UnityEvent OnDeath = new UnityEvent();
-        
-        [Tooltip("The event that will run when the object takes damage.")]
-        public UnityEvent OnDamage = new UnityEvent();
 
-        [Header("Settings")] 
-        [Tooltip("Show Debug messages in the console.")]
-        public bool DEBUG_MODE = false;
-        
+        // Invoke the OnDamage Event
+        OnDamage.Invoke();
 
-        // Start is called before the first frame update
-        void Awake()
+        // Check if currentHP is still above 0.
+        if (currentHP > 0)
         {
-            // Ensure our currentHP equals our maxHP 
-            currentHP = maxHP;
+            // If so, return false.
+            return false;
         }
+        else
+        {
+            // If not, run Death() and return true;
+            Death();
+            return true;
+        }
+    }
 
     /// <summary>
     /// Destroys the gameObject and runs any on-death effects.
@@ -99,79 +96,57 @@ public class Health : MonoBehaviour
         OnDeath.Invoke();
         switch (deathBehaviour)
         {
-            //ColorChanger ChangeColor = GetComponent<ColorChanger>();
-            //// Apply damage.
-            //ChangeColor.ChangeColorRed();
-            currentHP -= damage;
-
-            // In debug mode, print a message in the console letting us know the value of currentHP.
-            if (DEBUG_MODE)
-            {
-                Debug.Log(currentHP);
-            }
-
-            // Invoke the OnDamage Event
-            OnDamage.Invoke();
-            
-            // Check if currentHP is still above 0.
-            if (currentHP > 0)
-            {
-                // If so, return false.
-                return false;
-            }
-            else
-            {
-                // If not, run Death() and return true;
-                Death();
-                return true;
-            }
+            case DeathBehaviour.DestroyOnDeath:
+                Destroy(gameObject);
+                break;
+            case DeathBehaviour.ResetOnDeath:
+                ResetHealth();
+                break;
+            case DeathBehaviour.DisableOnDeath:
+                gameObject.SetActive(false);
+                break;
         }
-
-        /// <summary>
-        /// Destroys the gameObject and runs any on-death effects.
-        /// </summary>
-        private void Death()
-        {
-            OnDeath.Invoke();
-            switch (deathBehaviour)
-            {
-                case DeathBehaviour.DestroyOnDeath:
-                    Destroy(gameObject);
-                    break;
-                case DeathBehaviour.ResetOnDeath:
-                    ResetHealth();
-                    break;
-                case DeathBehaviour.DisableOnDeath:
-                    gameObject.SetActive(false);
-                    break;
-            }
-        }
-
-        /// <summary>
-        /// Runs any on death effects. Can be called from anywhere if need be.
-        /// </summary>
-        public void DeathFromOtherMeans()
-        {
-            Death();
-        }
-        
-        
-        /// <summary>
-        /// Returns the current health property of the component.
-        /// </summary>
-        /// <returns></returns>
-        public float GetCurrentHealth()
-        {
-            return currentHP;
-        }
-
-        /// <summary>
-        /// Resets health to the max value when called.
-        /// </summary>
-        public void ResetHealth()
-        {
-            currentHP = maxHP;
-        }
-        
     }
+
+    /// <summary>
+    /// Runs any on death effects. Can be called from anywhere if need be.
+    /// </summary>
+    public void DeathFromOtherMeans()
+    {
+        Death();
+    }
+
+
+    /// <summary>
+    /// Returns the current health property of the component.
+    /// </summary>
+    /// <returns></returns>
+    public float GetCurrentHealth()
+    {
+        return currentHP;
+    }
+
+    /// <summary>
+    /// Resets health to the max value when called.
+    /// </summary>
+    public void ResetHealth()
+    {
+        currentHP = maxHP;
+    }
+
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+        if (redOrNot == true)
+        {
+            if (timer <= 0.0f)
+            {
+                ChangeColor.ResetColor();
+                timer = 0.5f;
+                redOrNot = false;
+            }
+        }
+
+    }
+}
 
