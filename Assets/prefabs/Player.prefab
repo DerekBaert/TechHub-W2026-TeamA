@@ -438,7 +438,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000000
   m_LinearDamping: 5
   m_AngularDamping: 0
   m_GravityScale: 0
@@ -452,7 +452,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8150363573851263939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,11 +465,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef735b7840133844b9c5726326727372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  movementType: 0
+  movementType: 2
   xInput: 0
   yInput: 0
-  acceleration: 20
-  maxSpeed: 30
+  acceleration: 7
+  maxSpeed: 10
   rotationSpeed: 40
   lockYInput: 0
   enableJump: 0
@@ -486,6 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55384b2ab999b9145bf6c3589f0f908d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+  counterScript: {fileID: 0}
   timer: 0
   redOrNot: 0
   maxHP: 100
