@@ -130,6 +130,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBulletMover
   player: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
   speed: 5
+  damage: 5
+  health: {fileID: 0}
+  duration: 10
 --- !u!50 &449437899378972211
 Rigidbody2D:
   serializedVersion: 5
@@ -144,7 +147,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
