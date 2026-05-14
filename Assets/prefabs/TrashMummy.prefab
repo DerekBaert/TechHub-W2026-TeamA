@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3644630285538766358}
   - component: {fileID: 8711947173105127777}
   - component: {fileID: 4554010599721815024}
+  - component: {fileID: -8198313746181951357}
   m_Layer: 0
   m_Name: TrashMummy
   m_TagString: Untagged
@@ -269,3 +270,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   DEBUG_MODE: 0
+--- !u!114 &-8198313746181951357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612411549039116950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4571ce5c0bee5f74d85a8a971b1555c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::trashmommy
+  trashMommyClip: {fileID: 8300000, guid: f9fa43ace2561884bb637227e3de9d17, type: 3}
