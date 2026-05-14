@@ -202,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55384b2ab999b9145bf6c3589f0f908d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+  counterScript: {fileID: 0}
   timer: 0
   redOrNot: 0
   maxHP: 1

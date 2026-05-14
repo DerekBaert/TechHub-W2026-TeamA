@@ -44,6 +44,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        counterScript = FindFirstObjectByType<DeathCounter1>();
         ChangeColor = GetComponent<ColorChanger>();
         // Ensure our currentHP equals our maxHP 
         currentHP = maxHP;
@@ -82,7 +83,6 @@ public class Health : MonoBehaviour
         {
             // If not, run Death() and return true;
             Death();
-            counterScript.IncreaseCounter();
             return true;
         }
     }
@@ -92,6 +92,7 @@ public class Health : MonoBehaviour
     /// </summary>
     private void Death()
     {
+        counterScript.IncreaseCounter();
         OnDeath.Invoke();
         switch (deathBehaviour)
         {

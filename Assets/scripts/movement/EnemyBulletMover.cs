@@ -25,14 +25,14 @@ public class EnemyBulletMover : MonoBehaviour
     void Start()
     {
         GameObject.Find("Player");
-        direction = player.transform.position - transform.position;
+        direction = transform.position - player.transform.position;
         direction = Vector2.Normalize(direction);
     }
 
     // Update is called once per frame
     void Update()
     {
-       transform.Translate(direction * speed * Time.deltaTime);
+       transform.Translate(direction * Time.deltaTime);
         time += Time.deltaTime;
         if (time > duration)
         {
