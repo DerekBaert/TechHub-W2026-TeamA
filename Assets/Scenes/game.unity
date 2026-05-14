@@ -605,9 +605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adca24b34eccf8d419d5edcdfd439bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawnerlogic
-  objectToSpawn: {fileID: 2774313747164983040, guid: 9c68093aefcdb93449f0d374671b382d, type: 3}
-  spawnInterval: 3
-  startAfter: 15
+  objectToSpawn: {fileID: 2923037867726511147, guid: 26058f94dfeef594b8dd1ca455c193f6, type: 3}
+  spawnInterval: 0.1
+  startAfter: 1
 --- !u!4 &765654537
 Transform:
   m_ObjectHideFlags: 0

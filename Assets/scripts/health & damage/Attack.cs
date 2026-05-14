@@ -8,23 +8,25 @@ public class Attack : MonoBehaviour
     void Start()
     {
         circleCollider = GetComponent<Collider2D>();
+        circleCollider.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
        
-        if (Input.GetKey(KeyCode.Space) == true) 
+        if (Input.GetKeyDown(KeyCode.Space) == true) 
         {
             print("SpaceClicked");
             circleCollider.enabled = true;
+           
+
 
         }
-        else
+        if (Input.GetKeyUp(KeyCode.Space) == true)
         {
-       
+            print("SpaceReleased");
             circleCollider.enabled = false;
-
         }
 
     }
