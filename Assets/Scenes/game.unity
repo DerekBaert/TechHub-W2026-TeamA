@@ -462,6 +462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanEnemyAttackTest
       objectReference: {fileID: 0}
+    - target: {fileID: 2774313747164983040, guid: ad8c5d4a3041c4542a0cb237eecb3ec4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6457057189464971834, guid: ad8c5d4a3041c4542a0cb237eecb3ec4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.185135
@@ -592,7 +596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &765654536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -942,6 +946,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1110123558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110123537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2ad88b39d1d8d49af36a87a3a51f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
+  spriteRender: {fileID: 0}
 --- !u!1 &1159060050
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,7 +977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1159060051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,7 +1132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1252054735
 Transform:
   m_ObjectHideFlags: 0
@@ -1566,7 +1583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1648511132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12651,6 +12668,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1110123550}
+    - targetCorrespondingSourceObject: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1110123558}
     - targetCorrespondingSourceObject: {fileID: 4563858666377017147, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1871899402}
