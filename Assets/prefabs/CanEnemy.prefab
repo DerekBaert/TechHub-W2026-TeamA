@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3261685830132662820}
   - component: {fileID: 2906457619692505577}
   - component: {fileID: 7076115287581581078}
+  - component: {fileID: -6301683350967356995}
   m_Layer: 0
   m_Name: CanEnemy
   m_TagString: Untagged
@@ -244,3 +245,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
   spriteRender: {fileID: 0}
+--- !u!114 &-6301683350967356995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774313747164983040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2d44bf7b60a6f49a170857b94f3e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::canenemy
+  canenemyclip: {fileID: 8300000, guid: 9bbc0595b1b503c47a3f54a92eac4922, type: 3}

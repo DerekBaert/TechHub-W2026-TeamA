@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3261685830132662820}
   - component: {fileID: 2906457619692505577}
   - component: {fileID: -3214081473498207813}
+  - component: {fileID: 6071856035470223720}
   m_Layer: 0
   m_Name: CanEnemyAttackTest
   m_TagString: Untagged
@@ -174,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55384b2ab999b9145bf6c3589f0f908d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+  counterScript: {fileID: 0}
   timer: 0
   redOrNot: 0
   maxHP: 3
@@ -244,6 +246,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
   spriteRender: {fileID: 0}
+--- !u!114 &6071856035470223720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774313747164983040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2d44bf7b60a6f49a170857b94f3e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::canenemy
+  canenemyclip: {fileID: 8300000, guid: 9bbc0595b1b503c47a3f54a92eac4922, type: 3}
 --- !u!1 &3080429228290083911
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,5 +306,3 @@ MonoBehaviour:
   enemyBullet: {fileID: 0}
   player: {fileID: 0}
   timeBetweenShots: 2
-  speed: 0
-  rotationModifier: 0

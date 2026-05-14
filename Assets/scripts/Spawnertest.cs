@@ -12,6 +12,8 @@ public class Spawnerlogic : MonoBehaviour
     private GameObject objectToSpawn;
    public float spawnInterval = 1.5f;
     public float startAfter = 2f;
+    public int spawnAmount = 5;
+    private int amountSpawned = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,10 +31,14 @@ public class Spawnerlogic : MonoBehaviour
 
     void RandomSpawn()
     {
-        xPosition = Random.Range(-45f, 45f);
-        yPosition = Random.Range(-45f, 45f);
-        spawnPosition = new Vector3(xPosition, yPosition, 0);
-        Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
+        if (amountSpawned < spawnAmount)
+        {
+            amountSpawned++;
+            xPosition = Random.Range(-45f, 45f);
+            yPosition = Random.Range(-45f, 45f);
+            spawnPosition = new Vector3(xPosition, yPosition, 0);
+            Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
+        }
    
     }
 }
