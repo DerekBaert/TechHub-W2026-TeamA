@@ -67,8 +67,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.012978911, y: -0.025957942}
-  m_Size: {x: 1.4916053, y: 2.868993}
+  m_Offset: {x: 0.0025312304, y: -0.065793395}
+  m_Size: {x: 1.3205484, y: 2.7663186}
   m_Direction: 0
 --- !u!114 &7612089043224319738
 MonoBehaviour:
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cc2dbf34092ee44b31a0068655d9b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyAttack
-  player: {fileID: 0}
+  player: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
   health: {fileID: 0}
 --- !u!1 &4372395488386139349
 GameObject:
@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 7486419861883258829}
   - component: {fileID: 3000775470681405654}
   - component: {fileID: 8255849510175400801}
+  - component: {fileID: 4681233504237553997}
   m_Layer: 0
   m_Name: BottleEnemy 1
   m_TagString: Untagged
@@ -135,7 +136,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 5
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -244,9 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyMovement
   player: {fileID: 0}
   followPlayer: 1
-  MaxSpeed: 10
-  MinSpeed: 5
-  stopping: 0
+  speed: 15
 --- !u!114 &3000775470681405654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +258,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55384b2ab999b9145bf6c3589f0f908d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  maxHP: 3
+  counterScript: {fileID: 0}
+  timer: 0
+  redOrNot: 0
+  maxHP: 10
   deathBehaviour: 0
   OnDeath:
     m_PersistentCalls:
@@ -305,3 +307,16 @@ CapsuleCollider2D:
   m_Offset: {x: -0.020017385, y: -0.2427609}
   m_Size: {x: 2.5111184, y: 5.5472636}
   m_Direction: 0
+--- !u!114 &4681233504237553997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372395488386139349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2ad88b39d1d8d49af36a87a3a51f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  spriteRender: {fileID: 0}

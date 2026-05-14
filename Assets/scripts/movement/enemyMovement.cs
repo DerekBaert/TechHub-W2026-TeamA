@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class enemyMovement : MonoBehaviour
 {
-    
+
     public GameObject player;
-   public bool followPlayer = true;
+    public bool followPlayer = true;
     Vector2 mover;
     private Rigidbody2D rb2D;
     public int speed = 15;
@@ -29,3 +29,4 @@ public class enemyMovement : MonoBehaviour
         }
     }
 }
+

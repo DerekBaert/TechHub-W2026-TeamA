@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 2080447137835653774}
   - component: {fileID: 3261685830132662820}
   - component: {fileID: 2906457619692505577}
+  - component: {fileID: 7076115287581581078}
+  - component: {fileID: -718881031734181326}
   m_Layer: 0
   m_Name: CanEnemy
   m_TagString: Untagged
@@ -131,7 +133,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 5
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -159,6 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyMovement
   player: {fileID: 0}
   followPlayer: 1
+  speed: 12
 --- !u!114 &3261685830132662820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +174,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55384b2ab999b9145bf6c3589f0f908d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  maxHP: 3
+  counterScript: {fileID: 0}
+  timer: 0
+  redOrNot: 0
+  maxHP: 15
   deathBehaviour: 0
   OnDeath:
     m_PersistentCalls:
@@ -226,3 +232,36 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.3833246, y: 3.6841683}
   m_EdgeRadius: 0
+--- !u!114 &7076115287581581078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774313747164983040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2ad88b39d1d8d49af36a87a3a51f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChanger
+  spriteRender: {fileID: 0}
+--- !u!114 &-718881031734181326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774313747164983040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324bed34e521cde41ae54e2d28af7ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  spawnOnStart: 1
+  objectToSpawn: {fileID: 4372395488386139349, guid: ac89b125207a29d4c9f890a32c367dcd, type: 3}
+  latestSpawnedObject: {fileID: 0}
+  spawnTime: 1
+  OnSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  DEBUG_MODE: 0

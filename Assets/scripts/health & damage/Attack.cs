@@ -8,6 +8,7 @@ public class Attack : MonoBehaviour
     void Start()
     {
         circleCollider = GetComponent<Collider2D>();
+        circleCollider.enabled = false;
     }
 
     // Update is called once per frame
@@ -17,12 +18,14 @@ public class Attack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true) 
         {
             circleCollider.enabled = true;
+           
+
 
         }
-        else
-        { 
+        if (Input.GetKeyUp(KeyCode.Space) == true)
+        {
+            print("SpaceReleased");
             circleCollider.enabled = false;
-
         }
 
     }
