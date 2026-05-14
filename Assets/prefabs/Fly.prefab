@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2252201039913972402}
   - component: {fileID: 8586232896654824846}
   - component: {fileID: 751695678404467413}
+  - component: {fileID: -242969595986213556}
   m_Layer: 0
   m_Name: Fly
   m_TagString: Untagged
@@ -247,3 +248,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-242969595986213556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2923037867726511147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324bed34e521cde41ae54e2d28af7ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  spawnOnStart: 1
+  objectToSpawn: {fileID: 2923037867726511147}
+  latestSpawnedObject: {fileID: 0}
+  spawnTime: 65
+  OnSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  DEBUG_MODE: 1
