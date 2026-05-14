@@ -12,8 +12,7 @@ public class RangedEnemyAttack : MonoBehaviour
     void Start()
     {
         GameObject.Find("Player");
-        GameObject enemyBullet = Instantiate(Resources.Load("EnemyBullet", typeof(GameObject))) as GameObject;
-
+       
     }
 
     // Update is called once per frame

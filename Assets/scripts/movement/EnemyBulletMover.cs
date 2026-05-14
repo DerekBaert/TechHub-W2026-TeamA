@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyBulletMover : MonoBehaviour
 {
     public GameObject player;
-    private Vector2 direction;
+    private Vector3 direction;
     public float speed = 5;
     public int damage = 5;
     public Health health;
@@ -24,15 +25,15 @@ public class EnemyBulletMover : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameObject.Find("Player");
+        player = FindFirstObjectByType<PlayerMovement>().gameObject;
         direction = player.transform.position - transform.position;
-        direction = Vector2.Normalize(direction);
+        direction = Vector3.Normalize(direction);
     }
 
     // Update is called once per frame
     void Update()
     {
-       transform.Translate(direction * speed * Time.deltaTime);
+        transform.position += direction * speed * Time.deltaTime;
         time += Time.deltaTime;
         if (time > duration)
         {
