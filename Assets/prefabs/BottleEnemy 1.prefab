@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cc2dbf34092ee44b31a0068655d9b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyAttack
-  player: {fileID: 0}
+  player: {fileID: 9021589642485201232, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
   health: {fileID: 0}
   timeBetweenAttacks: 2
   damage: 10
@@ -260,6 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55384b2ab999b9145bf6c3589f0f908d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+  counterScript: {fileID: 0}
   timer: 0
   redOrNot: 0
   maxHP: 10
