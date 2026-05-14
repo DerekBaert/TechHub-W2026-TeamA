@@ -17,7 +17,7 @@ public class DeathCounter1 : MonoBehaviour
 
     public void IncreaseCounter()
     {
-        _counter++;
+        _counter = _counter + 1;
     }
 
 }
