@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 765654537}
   - component: {fileID: 765654536}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: CrumpleSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1110,7 +1110,7 @@ GameObject:
   - component: {fileID: 1252054735}
   - component: {fileID: 1252054736}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CanEnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12481,7 +12481,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3103949455227591160, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
       propertyPath: m_Radius
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3103949455227591160, guid: 26d6ee2e486b0d34b98e0292c8b6e966, type: 3}
       propertyPath: m_Enabled
