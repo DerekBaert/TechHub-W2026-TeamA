@@ -12,8 +12,6 @@ public class canenemy : MonoBehaviour
 			{
 				AudioSource.PlayClipAtPoint(canenemyclip, transform.position);
 			}
-
-			Destroy(gameObject);
 		}
 	}
 }

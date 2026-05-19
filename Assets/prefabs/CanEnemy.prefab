@@ -99,8 +99,8 @@ GameObject:
   - component: {fileID: 7322709698514197487}
   - component: {fileID: 825998272070028054}
   - component: {fileID: 2080447137835653774}
-  - component: {fileID: 3261685830132662820}
   - component: {fileID: 2906457619692505577}
+  - component: {fileID: 7725043719198083504}
   - component: {fileID: 7076115287581581078}
   - component: {fileID: -6301683350967356995}
   - component: {fileID: -6333891290461948400}
@@ -250,30 +250,6 @@ MonoBehaviour:
   player: {fileID: 0}
   followPlayer: 1
   speed: 12
---- !u!114 &3261685830132662820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2774313747164983040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55384b2ab999b9145bf6c3589f0f908d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  counterScript: {fileID: 0}
-  timer: 0
-  redOrNot: 0
-  maxHP: 15
-  deathBehaviour: 0
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDamage:
-    m_PersistentCalls:
-      m_Calls: []
-  DEBUG_MODE: 0
 --- !u!61 &2906457619692505577
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -320,6 +296,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.3833246, y: 3.6841683}
   m_EdgeRadius: 0
+--- !u!114 &7725043719198083504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774313747164983040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55384b2ab999b9145bf6c3589f0f908d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  counterScript: {fileID: 0}
+  timer: 0
+  redOrNot: 0
+  maxHP: 12
+  deathBehaviour: 0
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  DEBUG_MODE: 0
 --- !u!114 &7076115287581581078
 MonoBehaviour:
   m_ObjectHideFlags: 0
