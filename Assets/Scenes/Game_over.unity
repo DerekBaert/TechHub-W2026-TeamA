@@ -324,8 +324,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0023956, y: 0.0021362}
-  m_SizeDelta: {x: 1280, y: 768.5}
+  m_AnchoredPosition: {x: 0.00045013, y: 0.00051878}
+  m_SizeDelta: {x: 1428, y: 768.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705532161
 MonoBehaviour:
@@ -446,7 +446,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1109452435}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1316151801}
+        m_TargetAssemblyTypeName: toMainMenu, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1109452435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +509,7 @@ GameObject:
   - component: {fileID: 1316151798}
   - component: {fileID: 1316151797}
   - component: {fileID: 1316151796}
+  - component: {fileID: 1316151801}
   - component: {fileID: 1316151800}
   m_Layer: 5
   m_Name: Canvas
@@ -602,6 +615,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2965b3f0769094bb81967b9e1ac367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+--- !u!114 &1316151801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316151795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e240af4a97e7f8a42a7c3365d087a1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::toMainMenu
 --- !u!1 &1788660736
 GameObject:
   m_ObjectHideFlags: 0
