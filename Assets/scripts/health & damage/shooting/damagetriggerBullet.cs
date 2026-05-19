@@ -23,6 +23,7 @@ using UnityEngine;
             // If the object has a health component, apply damage to it.
             if (collisionObjectHealth != null)
             {
+        
                 collisionObjectHealth.TakeDamage(damageToDeal);
                 Destroy(gameObject);
         }

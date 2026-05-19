@@ -12,7 +12,7 @@ public class enemyMovement : MonoBehaviour
     void Start()
     {
         //this finds the player object so we can use its information
-        player = GameObject.Find("/Player");
+        player = GameObject.Find("Player");
         rb2D = gameObject.GetComponent<Rigidbody2D>();
     }
 

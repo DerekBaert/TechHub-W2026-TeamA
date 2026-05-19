@@ -14,12 +14,15 @@ public class enemyAttack : MonoBehaviour
     {
         player = GameObject.Find("/Player");
         health = player.GetComponent<playerhealth>();
-    }  
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        isInAttackZone = true;
-        health.TakeDamage(10);
+        if (collision.gameObject.CompareTag("Player"))
+        { isInAttackZone = true;
+        health.TakeDamage(10); }
+           
+    
     }
     public void OnTriggerExit2D(Collider2D collision)
     {

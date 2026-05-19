@@ -7,7 +7,7 @@ public class EnemyBulletMover : MonoBehaviour
     private Vector3 direction;
     public float speed = 5;
     public int damage = 5;
-    public Health health;
+    public playerhealth health;
     private float time = 0f;
     public float duration = 10f;
 
@@ -15,7 +15,7 @@ public class EnemyBulletMover : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            health = player.GetComponent<Health>();
+            health = player.GetComponent<playerhealth>();
             health.TakeDamage(damage);
             Destroy(this.gameObject);
         }  
