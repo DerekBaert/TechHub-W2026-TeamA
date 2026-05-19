@@ -23,7 +23,7 @@ public class EnemysLeftUI : MonoBehaviour
 
     public void UpdateText() 
     {
-        enemysLeft = null;
+        enemysLeft = "Enemys Left: ";
         enemysLeft = enemysLeft + (deathAmount - deathCounter._counter);
         text.SetText(enemysLeft);
     }
