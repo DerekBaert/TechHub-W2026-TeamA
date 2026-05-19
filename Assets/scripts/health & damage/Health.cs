@@ -113,6 +113,8 @@ public class Health : MonoBehaviour
     /// </summary>
     public void DeathFromOtherMeans()
     {
+        counterScript.IncreaseCounter();
+
         Death();
     }
 
