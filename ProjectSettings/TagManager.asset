@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - EnemyBullet
-  - Undefined
   - CanEnemy
+  - playerbullet
   layers:
   - Default
   - TransparentFX
