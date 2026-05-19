@@ -3,7 +3,7 @@ using UnityEngine;
 public class enemyAttack : MonoBehaviour
 {
     public GameObject player;
-    public Health health;
+    public playerhealth health;
     private bool isInAttackZone = false;
     public int timeBetweenAttacks = 2;
     private float timeUntilAttack = 0;
@@ -13,7 +13,7 @@ public class enemyAttack : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("/Player");
-        health = player.GetComponent<Health>();
+        health = player.GetComponent<playerhealth>();
     }  
 
     public void OnTriggerEnter2D(Collider2D collision)

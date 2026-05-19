@@ -9,7 +9,7 @@ public class HealthBarUI : MonoBehaviour
 {
     [Header("Whose Health are we Displaying?")]
     [Tooltip("The Health component that we'd like to track with the Image")]
-    public Health healthComponentToTrack;
+    public playerhealth healthComponentToTrack;
     
     // The Image the fill effect will be applied on.
     private Image healthBarImage;
