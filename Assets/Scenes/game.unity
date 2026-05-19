@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemysLeftUI
   deathCounter: {fileID: 0}
-  deathAmount: 5
+  deathAmount: 100
   text: {fileID: 0}
   enemysLeft: 'Enemys Left: '
 --- !u!114 &743946370
